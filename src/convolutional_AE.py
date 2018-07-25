@@ -73,7 +73,7 @@ if __name__ == "__main__":
     callback_tensorboard = TensorBoard(log_dir=tf_log_dir)
 
     history = model.fit(X_train, X_train,
-                        epochs=5,
+                        epochs=100,
                         batch_size=256,
                         shuffle=True,
                         validation_data=(X_test, X_test),
